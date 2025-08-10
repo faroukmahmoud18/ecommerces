@@ -1,0 +1,341 @@
+/* Search Page Styles */
+
+.search-form {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.search-form .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.search-form .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.search-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+/* Product Cards */
+.product-card {
+    margin-bottom: 1.5rem;
+}
+
+.product-card .card {
+    height: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #e0e0e0;
+}
+
+.product-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .card-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.product-card .card-title a:hover {
+    color: #007bff;
+}
+
+.product-card .rating {
+    font-size: 0.875rem;
+}
+
+.product-card .badge {
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Product List Items */
+.product-list-item {
+    margin-bottom: 1.5rem;
+}
+
+.product-list-item .card {
+    border: 1px solid #e0e0e0;
+}
+
+.product-list-item .card-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.product-list-item .card-title a:hover {
+    color: #007bff;
+}
+
+.product-list-item .rating {
+    font-size: 0.875rem;
+}
+
+.product-list-item .badge {
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Search Tags */
+.search-tag {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.search-tag:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Search Filters */
+.search-filters {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-filters .filter-title {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.search-filters .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-filters .filter-option {
+    padding: 0.25rem 0.5rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-filters .filter-option:hover {
+    background-color: #dee2e6;
+}
+
+.search-filters .filter-option.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Search Results */
+.search-results {
+    margin-top: 2rem;
+}
+
+.search-results .result-item {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.search-results .result-item:last-child {
+    border-bottom: none;
+}
+
+.search-results .result-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.search-results .result-snippet {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.search-results .result-meta {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Search Pagination */
+.search-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.search-pagination .page-item .page-link {
+    color: #007bff;
+    border-radius: 0.25rem;
+    margin: 0 0.125rem;
+}
+
+.search-pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Search Suggestions */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.search-suggestions .suggestion-item {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-suggestions .suggestion-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-suggestions .suggestion-item.highlight {
+    background-color: #e9ecef;
+    font-weight: 500;
+}
+
+/* Search Analytics */
+.search-analytics {
+    margin-bottom: 2rem;
+}
+
+.search-analytics .metric-card {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.search-analytics .metric-card .metric-value {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #007bff;
+}
+
+.search-analytics .metric-card .metric-label {
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.search-analytics .chart-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.search-analytics .chart-container .chart-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Search Admin */
+.search-admin .nav-tabs {
+    margin-bottom: 1rem;
+}
+
+.search-admin .tab-content {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.search-admin .index-table {
+    margin-top: 1rem;
+}
+
+.search-admin .index-table th {
+    white-space: nowrap;
+}
+
+.search-admin .settings-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.search-admin .settings-form .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.search-admin .settings-form .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.search-admin .settings-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .search-form .row {
+        flex-direction: column;
+    }
+
+    .search-form .col-md-3 {
+        margin-bottom: 1rem;
+    }
+
+    .product-card {
+        margin-bottom: 1rem;
+    }
+
+    .search-analytics .metric-card {
+        margin-bottom: 0.5rem;
+    }
+
+    .search-analytics .chart-container {
+        padding: 1rem;
+    }
+
+    .search-admin .index-table {
+        font-size: 0.875rem;
+    }
+
+    .search-admin .index-table th,
+    .search-admin .index-table td {
+        padding: 0.5rem;
+    }
+}

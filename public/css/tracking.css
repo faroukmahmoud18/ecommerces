@@ -1,0 +1,244 @@
+/* Shipping Tracking Styles */
+
+/* Timeline Styles */
+.tracking-timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.tracking-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8px;
+    height: 100%;
+    width: 2px;
+    background-color: #e0e0e0;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+}
+
+.timeline-event:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #e0e0e0;
+}
+
+.timeline-event .timeline-dot.bg-pending {
+    background-color: #ffc107;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #ffc107;
+}
+
+.timeline-event .timeline-dot.bg-created {
+    background-color: #17a2b8;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #17a2b8;
+}
+
+.timeline-event .timeline-dot.bg-shipped {
+    background-color: #007bff;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #007bff;
+}
+
+.timeline-event .timeline-dot.bg-in_transit {
+    background-color: #20c997;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #20c997;
+}
+
+.timeline-event .timeline-dot.bg-out_for_delivery {
+    background-color: #fd7e14;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #fd7e14;
+}
+
+.timeline-event .timeline-dot.bg-delivered {
+    background-color: #28a745;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #28a745;
+}
+
+.timeline-event .timeline-dot.bg-failed {
+    background-color: #dc3545;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #dc3545;
+}
+
+.timeline-event .timeline-dot.bg-returned {
+    background-color: #6c757d;
+    box-shadow: 0 0 0 2px #e0e0e0, 0 0 0 4px #6c757d;
+}
+
+/* Carrier Logos */
+.carrier-logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.carrier-logo.aramex {
+    background-image: url('/images/carriers/aramex.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carrier-logo.dhl {
+    background-image: url('/images/carriers/dhl.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carrier-logo.smsa {
+    background-image: url('/images/carriers/smsa.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carrier-logo.spl {
+    background-image: url('/images/carriers/spl.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Shipping Status Badges */
+.shipment-status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+.shipment-status-badge.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.shipment-status-badge.created {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.shipment-status-badge.shipped {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.shipment-status-badge.in_transit {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.shipment-status-badge.out_for_delivery {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.shipment-status-badge.delivered {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.shipment-status-badge.failed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.shipment-status-badge.returned {
+    background-color: #e2e3e5;
+    color: #383d41;
+}
+
+/* Shipping Form Styles */
+.shipping-form {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.shipping-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.shipping-form .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.shipping-form .form-control {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+}
+
+.shipping-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+/* Shipping Cards */
+.shipment-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.shipment-card .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.shipment-card .card-body {
+    padding: 1.5rem;
+}
+
+.shipment-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .tracking-timeline {
+        padding-left: 20px;
+    }
+
+    .timeline-dot {
+        left: -22px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .tracking-timeline::before {
+        left: 6px;
+    }
+
+    .shipment-card .card-body {
+        padding: 1rem;
+    }
+}
