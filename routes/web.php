@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 // صفحة الرئيسية
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -110,15 +111,19 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::delete('/admin/shipping-rates/{rate}', [App\Http\Controllers\Admin\ShippingController::class, 'deleteRate'])->name('admin.shipping-rates.delete');
 });
 
-// صفحة تسجيل الدخول
+// Authentication Routes
+Route::get('register', [RegisteredUserController::class, 'create'])
+    ->middleware('guest')
+    ->name('register');
+
+Route::post('register', [RegisteredUserController::class, 'store'])
+    ->middleware('guest');
+
+// For now, let's assume a login view and route exist.
+// We are not implementing the full login logic in this step.
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
-
-// صفحة إنشاء الحساب
-Route::get('/register', function () {
-    return view('auth.register');
-})->name('register');
 
 // صفحة من نحن
 Route::get('/about', [PageController::class, 'about'])->name('pages.about');
